@@ -1,7 +1,7 @@
 package com.mzw.uml.dependence;
 
 public class PersonServiceBean {
-	private PersonDao personDao;// ��
+	private PersonDao personDao;
 
 	public void save(Person person) {
 	}
