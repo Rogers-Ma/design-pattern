@@ -35,7 +35,7 @@ public class DeepProtoType implements Serializable, Cloneable {
 		ByteArrayInputStream bis = null;
 		ObjectInputStream ois = null;
 		try {
-			
+
 			bos = new ByteArrayOutputStream();
 			oos = new ObjectOutputStream(bos);
 			oos.writeObject(this);
@@ -43,24 +43,24 @@ public class DeepProtoType implements Serializable, Cloneable {
 			ois = new ObjectInputStream(bis);
 			DeepProtoType copyObj = (DeepProtoType) ois.readObject();
 			return copyObj;
-		
+
 		} catch (Exception e) {
-		
+
 			e.printStackTrace();
 			return null;
-		
+
 		} finally {
 			try {
-		
+
 				bos.close();
 				oos.close();
 				bis.close();
 				ois.close();
-			
+
 			} catch (Exception e2) {
-			
+
 				System.out.println(e2.getMessage());
-			
+
 			}
 		}
 	}

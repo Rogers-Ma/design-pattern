@@ -7,5 +7,5 @@ public class Voltage220V {
 		System.out.println("电压= " + src + " V");
 		return src;
 	}
-	
+
 }

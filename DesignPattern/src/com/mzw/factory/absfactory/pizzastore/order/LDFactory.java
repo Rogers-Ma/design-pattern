@@ -1,10 +1,8 @@
 package com.mzw.factory.absfactory.pizzastore.order;
 
-
 import com.mzw.factory.absfactory.pizzastore.pizza.LDCheesePizza;
 import com.mzw.factory.absfactory.pizzastore.pizza.LDPepperPizza;
 import com.mzw.factory.absfactory.pizzastore.pizza.Pizza;
-
 
 public class LDFactory implements AbsFactory {
 

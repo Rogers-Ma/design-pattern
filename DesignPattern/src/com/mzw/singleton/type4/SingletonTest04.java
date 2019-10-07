@@ -1,10 +1,9 @@
 package com.mzw.singleton.type4;
 
-
 public class SingletonTest04 {
 
 	public static void main(String[] args) {
-		System.out.println("����ʽ2 �� �̰߳�ȫ~");
+		System.out.println("懒汉式2 ， 线程安全~");
 		Singleton instance = Singleton.getInstance();
 		Singleton instance2 = Singleton.getInstance();
 		System.out.println(instance == instance2); // true
@@ -14,16 +13,17 @@ public class SingletonTest04 {
 
 }
 
-// ����ʽ(�̰߳�ȫ��ͬ������)
+// 懒汉式(线程安全，同步方法)
 class Singleton {
 	private static Singleton instance;
-	
-	private Singleton() {}
-	
-	//�ṩһ����̬�Ĺ��з���������ͬ������Ĵ��룬����̰߳�ȫ����
-	//������ʽ
+
+	private Singleton() {
+	}
+
+	// 提供一个静态的公有方法，加入同步处理的代码，解决线程安全问题
+	// 即懒汉式
 	public static synchronized Singleton getInstance() {
-		if(instance == null) {
+		if (instance == null) {
 			instance = new Singleton();
 		}
 		return instance;

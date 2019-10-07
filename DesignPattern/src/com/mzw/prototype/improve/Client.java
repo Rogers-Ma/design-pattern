@@ -3,15 +3,15 @@ package com.mzw.prototype.improve;
 public class Client {
 	public static void main(String[] args) {
 		System.out.println("原型模式完成对象的创建");
-		
+
 		Sheep sheep = new Sheep("tom", 1, "白色");
 		sheep.friend = new Sheep("jack", 2, "白色");
-		
-		Sheep sheep2 = (Sheep)sheep.clone(); //克隆
-		Sheep sheep3 = (Sheep)sheep.clone(); //克隆
-		Sheep sheep4 = (Sheep)sheep.clone(); //克隆
-		Sheep sheep5 = (Sheep)sheep.clone(); //克隆
-		
+
+		Sheep sheep2 = (Sheep) sheep.clone(); // 克隆
+		Sheep sheep3 = (Sheep) sheep.clone(); // 克隆
+		Sheep sheep4 = (Sheep) sheep.clone(); // 克隆
+		Sheep sheep5 = (Sheep) sheep.clone(); // 克隆
+
 		// friend属性的hashcode是相同，即friend应用指向的是同一块内存空间，即浅拷贝
 		System.out.println("sheep2 =" + sheep2 + "sheep2.friend=" + sheep2.friend.hashCode());
 		System.out.println("sheep3 =" + sheep3 + "sheep3.friend=" + sheep3.friend.hashCode());

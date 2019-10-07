@@ -1,6 +1,5 @@
 package com.mzw.adapter.interfaceadapter;
 
-
 public abstract class AbsAdapter implements Interface4 {
 	public void m1() {
 

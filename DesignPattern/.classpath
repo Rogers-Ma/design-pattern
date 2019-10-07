@@ -2,5 +2,9 @@
 <classpath>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="src/com/mzw/proxy/cglib/asm-commons.jar"/>
+	<classpathentry kind="lib" path="src/com/mzw/proxy/cglib/asm-tree.jar"/>
+	<classpathentry kind="lib" path="src/com/mzw/proxy/cglib/asm.jar"/>
+	<classpathentry kind="lib" path="src/com/mzw/proxy/cglib/cglib-2.2.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

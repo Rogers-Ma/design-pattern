@@ -1,18 +1,20 @@
 package com.mzw.builder;
 
 public abstract class AbstractHouse {
-	
-	//��ػ�
+
+	// ��ػ�
 	public abstract void buildBasic();
-	//��ǽ
+
+	// ��ǽ
 	public abstract void buildWalls();
-	//�ⶥ
+
+	// �ⶥ
 	public abstract void roofed();
-	
+
 	public void build() {
 		buildBasic();
 		buildWalls();
 		roofed();
 	}
-	
+
 }

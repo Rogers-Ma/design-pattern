@@ -1,6 +1,6 @@
 package com.mzw.factory.absfactory.pizzastore.pizza;
 
-public class LDCheesePizza extends Pizza{
+public class LDCheesePizza extends Pizza {
 
 	@Override
 	public void prepare() {

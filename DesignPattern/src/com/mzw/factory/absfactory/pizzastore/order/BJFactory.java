@@ -12,9 +12,9 @@ public class BJFactory implements AbsFactory {
 		System.out.println("~使用的是抽象工厂模式~");
 		// TODO Auto-generated method stub
 		Pizza pizza = null;
-		if(orderType.equals("cheese")) {
+		if (orderType.equals("cheese")) {
 			pizza = new BJCheesePizza();
-		} else if (orderType.equals("pepper")){
+		} else if (orderType.equals("pepper")) {
 			pizza = new BJPepperPizza();
 		}
 		return pizza;

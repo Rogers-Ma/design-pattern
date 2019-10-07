@@ -1,6 +1,6 @@
 package com.mzw.factory.absfactory.pizzastore.pizza;
 
-public class LDPepperPizza extends Pizza{
+public class LDPepperPizza extends Pizza {
 	@Override
 	public void prepare() {
 		setName("伦敦的胡椒pizza");
